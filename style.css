@@ -1,0 +1,151 @@
+@font-face {
+    font-family: Outfit;
+    src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Young-Serif;
+    src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+
+:root{
+    --bg-color: hsl(30, 54%, 90%);
+    --rose-pink: hsl(330, 100%, 98%);
+    --brown: hsl(14, 45%, 36%);
+    --dark-pink: hsl(332, 51%, 32%);
+    --dark-grey: hsl(30, 10%, 34%);
+    --light-grey: hsl(30, 18%, 87%);
+}
+
+body{
+    margin: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    padding: min(50px, 10%);
+    font-family: Outfit, sans-serif;
+    color: var(--dark-grey);
+}
+
+h1, h2, h3{
+    font-family: Young-Serif;
+}
+
+.container{
+    background-color: white;
+    border-radius: 20px;
+    width: min(550px, 90%);
+    margin: auto;
+    padding: 25px;
+}
+
+.picture-wrapper{
+    width: 100%;
+    overflow: hidden;    
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture{
+    width: 100%;
+}
+
+.title{
+    font-weight: 500;
+    color: black;
+}
+
+.preparation-info{
+    background-color: var(--rose-pink);
+    border-radius: 10px;
+    padding: 1.5rem;
+    padding-bottom: 0.7rem;
+    margin: 1.7rem 0;
+}
+
+.preparation-info ul{
+    margin-left: -15px;
+}
+
+.preparation-info li{
+    padding-left: 15px;
+    line-height: 2rem;
+}
+
+.preparation-info li::marker{
+    color: var(--dark-pink);
+}
+
+.preparation-info p{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 0;
+    color: var(--dark-pink);
+}
+
+.bold{
+    font-weight: 700;
+}
+
+h2{
+    color: var(--brown);
+    font-weight: 500;
+}
+
+.ingredients ul{
+    list-style: square;
+    margin-left: -15px;
+}
+
+.ingredients li{
+    padding-left: 15px;
+    margin-bottom: 1rem;
+}
+
+.ingredients li::marker{
+    color: var(--brown);
+}
+
+.instructions ol{
+    margin-left: -15px;
+}
+
+.instructions li{
+    padding-left: 15px;
+}
+
+.instructions li::marker{
+    font-weight: 700;
+    color: var(--brown);
+}
+
+hr{
+    height: 1px;
+    background-color: var(--light-grey);
+    border: none;
+    margin: 30px 0;
+}
+
+.nutrition p{
+    font-size: 14px;
+}
+
+.nutrition-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.nutrition-table td{
+    border-bottom: 1px solid var(--light-grey);
+    padding: 10px 30px;
+}
+
+.nutrition-table .last-row{
+    border-bottom: none;
+}
+
+.table-value{
+    color: var(--brown);
+    font-weight: 700;
+}
